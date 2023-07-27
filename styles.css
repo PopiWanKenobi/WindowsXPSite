@@ -6,10 +6,6 @@ html {
     background-size: cover;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
 
 
 .taskbar {
@@ -23,13 +19,24 @@ p {
 }
 
 .start-menu {
-
     width: 170px;
     height: 100%;
     margin-left: -15px;
     background-color: green;
     border-radius: 15px;
     box-shadow: inset 0em 0.1em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
+    display: inline-block;
+
+}
+
+.tabs{
+    width: 15vw;
+    height: 90%;
+    margin-left: 10px;
+    background-color: #225af9;
+    border-radius: 5px;
+    box-shadow: inset 0em 0.1em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
+    display: inline-block;
 }
 
 .logo {
@@ -40,13 +47,23 @@ p {
     float: left;
 }
 
+.tab-text {
+    font-size: 16px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
 .start-text {
-    font-size: 24px;
+    font-size: 16px;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
-    padding-top: 10px;
+
 }
+
+
 
 .window {
     margin: 0 auto;
@@ -71,7 +88,6 @@ p {
 
 .window-title {
     color: white;
-    padding: 8px;
     display: inline-block;
 
 }
