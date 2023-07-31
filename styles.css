@@ -1,3 +1,4 @@
+
 html {
     margin: 0;
     padding: 0;
@@ -6,7 +7,10 @@ html {
     background-size: cover;
 }
 
-
+h2, h3, p{
+    margin: 0;
+    padding: 0
+}
 
 .taskbar {
     background-color: #225ad9;
@@ -207,4 +211,149 @@ li {
     padding-top:10px;
     
     
+}
+
+/* PROFILE SITE */
+
+.profile-site{
+    background-color: #FFF;
+    height: 90%;
+    text-align: center;
+}
+
+.profile-content{
+    display:flex;
+    height:90%;
+    background-color: #fff;
+}
+
+.profile-banner{
+    background-color: #3b5d9d;
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.profile-head{
+    background-color: #7086b2;
+    box-shadow: inset 0em 0em 0.2em 0em rgba(255, 255, 255, 0.5), inset 0em 0em .2em 0em rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 35px;
+    font-size: 12px;
+    text-align: left;
+    color: white;
+}
+
+.profile-side{
+    background-color: #FFF;
+    width: 33%;
+    height: 90%;
+    border-left: solid;
+    border-right: solid;
+    border-width: 3px;
+    border-color: lightgray;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.profile-main{
+    background-color: #FFF;
+    width: 67%;
+    height: 90%;
+    border-right: solid;
+    border-width: 3px;
+    border-color: lightgray;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: left;
+
+}
+
+.profile-separator{
+    background-color: #d2dbe9;
+    width: 90%;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+
+    font-size: 16px;
+    text-align: left;
+    color: #354251;
+    border-top: solid 2px black;
+}
+.profile-headers{
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.pfp{
+    max-width: 90%;
+    height: auto;
+}
+
+.separator-heading{
+    color: #354251;
+    padding-left: 10px;
+    
+}
+
+.status-text{
+    text-align: left;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 7%;
+    margin-right: 20px;
+}
+.social-links{
+    margin-top: 10px;
+    margin-left: 7%;
+    margin-right: 7%;
+
+    display: flex;
+    justify-content:left;
+
+}
+
+.social-link{
+    margin-left: 5%;
+    margin-top: 3px;
+    
+}
+
+.social-icon{
+    height: 25px;
+    border-radius: 20%;
+}
+
+.profile-bio{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 10px;
+    margin-right: 25px;
+    text-align: right;
+}
+
+.profile-p{
+    margin-top: 10px;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.skills-seperator{
+    border-bottom: solid 2px lightgray;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: grey;
+    font-size: 16px;
 }
