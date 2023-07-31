@@ -388,3 +388,8 @@ h2.profile-bio{
     overflow: hidden;
     overflow-y: scroll;
 }
+
+.skills{
+    display: flex;
+    justify-content:space-evenly;
+}
