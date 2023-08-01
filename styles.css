@@ -1,4 +1,3 @@
-
 html {
     margin: 0;
     padding: 0;
@@ -7,7 +6,9 @@ html {
     background-size: cover;
 }
 
-h2, h3, p{
+h2,
+h3,
+p {
     margin: 0;
     padding: 0
 }
@@ -20,6 +21,8 @@ h2, h3, p{
     width: 100%;
     height: 50px;
     box-shadow: inset 0em 0.1em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
+
+    display: flex;
 }
 
 .start-menu {
@@ -29,18 +32,26 @@ h2, h3, p{
     background-color: green;
     border-radius: 15px;
     box-shadow: inset 0em 0.1em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
-    display: inline-block;
 
 }
 
-.tabs{
+.tabs {
     width: 15vw;
     height: 90%;
     margin-left: 10px;
     background-color: #225af9;
     border-radius: 5px;
     box-shadow: inset 0em 0.1em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
-    display: inline-block;
+    
+}
+
+.pressed-tabs {
+    width: 15vw;
+    height: 90%;
+    margin-left: 10px;
+    background-color: #1a51b8;
+    border-radius: 5px;
+    box-shadow: inset 0em -0.1em 0.2em 0 rgba(255, 255, 255, 0.5), inset 0.2em 0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -57,6 +68,8 @@ h2, h3, p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 
+    margin-top: 10px;
+
 }
 
 .start-text {
@@ -64,6 +77,7 @@ h2, h3, p{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
+    margin-top: 10px;
 
 }
 
@@ -71,18 +85,34 @@ h2, h3, p{
 
 .window {
     margin: 0 auto;
-    margin-top: 5vh;
+    /*margin-top: 5vh;*/
     width: 70vw;
     height: 80vh;
+
+    top: 5%;
+    left: 15%;
+
     overflow: hidden;
     background-color: lightgrey;
     border-style: solid;
     border-color: #225ad9;
     border-top-width: 0px;
     border-radius: 5px;
+    resize: both;
+    position: absolute;
+
+    display: none;
+
+
+}
+
+
+#windowheader {
+    cursor: move;
 }
 
 .toolbar {
+    cursor: move;
     background-color: #225ad9;
     left: 0;
     bottom: 0;
@@ -102,6 +132,7 @@ h2, h3, p{
     height: 25px;
     width: auto;
     float: right;
+    z-index: 1;
 
 }
 
@@ -141,7 +172,7 @@ li {
     padding-top: 15%;
     text-shadow: 2px 2px 2px black;
     font-size: 3vw;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #blue {
@@ -178,14 +209,14 @@ li {
     width: 40%;
 }
 
-.dropdown-link{
+.dropdown-link {
     background-color: lightgrey;
     width: 100%;
     height: 30px;
     text-align: left;
 }
 
-.dropdown-link:hover{
+.dropdown-link:hover {
     background-color: grey;
 }
 
@@ -200,34 +231,34 @@ li {
     display: block;
 }
 
-.search-button{
+.search-button {
     display: inline-block;
     background-color: grey;
     width: 200px;
     height: 30px;
     color: white;
     margin: 10px;
-    padding-top:10px;
-    
-    
+    padding-top: 10px;
+
+
 }
 
 /* PROFILE SITE */
 
-.profile-site{
+.profile-site {
     background-color: #fff;
     height: 90%;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.profile-content{
-    display:flex;
-    height:100%;
+.profile-content {
+    display: flex;
+    height: 100%;
     background-color: #FFF;
 }
 
-.profile-banner{
+.profile-banner {
     background-color: #3b5d9d;
     width: 100%;
     height: 35px;
@@ -238,7 +269,7 @@ li {
     padding-bottom: 5px;
 }
 
-.profile-head{
+.profile-head {
     background-color: #7086b2;
     box-shadow: inset 0em 0em 0.2em 0em rgba(255, 255, 255, 0.5), inset 0em 0em .2em 0em rgba(0, 0, 0, .5);
     width: 100%;
@@ -248,7 +279,7 @@ li {
     color: white;
 }
 
-.profile-side{
+.profile-side {
     background-color: #FFF;
     width: 33%;
     height: 90%;
@@ -262,7 +293,7 @@ li {
     padding: 5px;
 }
 
-.profile-main{
+.profile-main {
     background-color: #FFF;
     width: 67%;
     height: 90%;
@@ -280,7 +311,7 @@ li {
 
 }
 
-.profile-separator{
+.profile-separator {
     background-color: #d2dbe9;
     width: 90%;
     height: 25px;
@@ -293,70 +324,72 @@ li {
     color: #354251;
     border-top: solid 2px black;
 }
-.profile-headers{
+
+.profile-headers {
     padding: 5px;
     padding-left: 20px;
 }
 
-.pfp{
+.pfp {
     max-width: 90%;
     height: auto;
 }
 
-.separator-heading{
+.separator-heading {
     color: #354251;
     padding-left: 10px;
-    
+
 }
 
-.status-text{
+.status-text {
     text-align: left;
     width: 90%;
     margin-top: 5px;
     margin-left: 7%;
     margin-right: 20px;
 }
-.social-links{
+
+.social-links {
     margin-top: 10px;
     margin-left: 7%;
     margin-right: 7%;
 
     display: flex;
-    justify-content:left;
+    justify-content: left;
 
 }
 
-.social-link{
+.social-link {
     margin-left: 5%;
     margin-top: 3px;
     overflow-wrap: anywhere;
 }
 
-.social-icon{
+.social-icon {
     height: 25px;
     border-radius: 20%;
 }
 
-.profile-bio{
+.profile-bio {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-left: 10px;
     margin-right: 25px;
     text-align: right;
     color: #3b5d9d;
 }
 
-h2.profile-bio{
+h2.profile-bio {
     font-size: 36px;
 }
 
-.profile-p{
+.profile-p {
     margin-top: 10px;
     padding-left: 7%;
     padding-right: 7%;
 }
 
-.skills-seperator{
+.skills-seperator {
     border-bottom: solid 2px lightgray;
     width: 85%;
     margin-left: auto;
@@ -366,30 +399,30 @@ h2.profile-bio{
     font-size: 16px;
 }
 
-.profile-post{
+.profile-post {
     margin-left: 7%;
     margin-top: 10px;
     width: 80%;
-    display:flex;
+    display: flex;
     padding: 5px;
     border-top: solid 2px black;
     background-color: #FFFFFF;
 }
 
-.post-icon{
+.post-icon {
     height: 40px;
     width: auto;
     border-radius: 10px;
     margin-right: 20px;
 }
 
-.profile-expereince{
+.profile-expereince {
     height: 33%;
     overflow: hidden;
     overflow-y: scroll;
 }
 
-.skills{
+.skills {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
