@@ -33,10 +33,6 @@
 
     <div>
         <ul class="desktop-icons">
-            <li class="dektop-icon">
-                <img class="icon" src="images/icons/folder-icon.png">
-                <p class="icon-text">Home</p>
-            </li>
             <li class="dektop-icon" id="projects-icon">
                 <img class="icon" src="images/icons/folder-icon.png">
                 <p class="icon-text">Projects</p>
@@ -103,16 +99,16 @@
     </div>
     <div class="window" id="about">
         <div class="toolbar" id="aboutheader">
-            <p class="window-title">Window Title</p>
+            <p class="window-title">Book of Faces 08</p>
             <img class="toolbar-icons" src="images/windows-icons.png">
         </div>
+        <div class="profile-banner">
+            <h2 class="profile-headers">about me</h2>
+        </div>
+        <div class="profile-head">
+            <h2 class="profile-headers">Dylan Pope's profile (This is me) </h2>
+        </div>
         <div class="profile-site">
-            <div class="profile-banner">
-                <h2 class="profile-headers">about me</h2>
-            </div>
-            <div class="profile-head">
-                <h2 class="profile-headers">Dylan Pope's profile (This is me) </h2>
-            </div>
             <div class="profile-content">
                 <div class="profile-side">
                     <img class="pfp" src="images/dylan-pfp.jpg" alt="dylan pope">
@@ -121,6 +117,21 @@
                     </div>
                     <p class="status-text">Dylan is: <br>Working as an HTML5 Game Developer <br><a
                             href="https://www.curiousmedia.com/">@CuriousMedia</a></p>
+                    <div class="profile-separator">
+                        <h3 class="separator-heading">Bio</h3>
+                    </div>
+                    <p class="status-text">
+                        <i>"Just a simple man, trying to make my way in the universe."</i> - Jango Fett
+                    </p>
+                    <p class="status-text">
+                        I like writing code
+                    </p>
+                    <p class="status-text">
+                        I love making games
+                    </p>
+                    <p class="status-text">
+                        And I'm always looking for a chance to make cool stuff.
+                    </p>
                     <div class="profile-separator">
                         <h3 class="separator-heading">Contact</h3>
                     </div>
@@ -155,7 +166,7 @@
                                 <img class="post-icon" src="images/icons/bsu-icon.png">
                             </div>
                             <div>
-                                <p>Dylan received a Bachelor's degree from Boise State Univesrity</p>
+                                <p>Dylan received a Bachelor's of Science from Boise State Univesrity</p>
                                 <p>May 2023</p>
                                 <p>Game, Interactive Media, Mobile development</p>
                             </div>
@@ -175,48 +186,79 @@
                     </div>
                     <div name="Education">
                         <div class="profile-separator">
-                            <h3 class="separator-heading">Experience</h3>
-                        </div>
-                        <div class="profile-post">
-                            <div>
-                                <img class="post-icon" src="images/icons/gp-icon.png">
-                            </div>
-                            <div>
-                                <p>Dylan developed a story book for Georgia Power</p>
-                                <p>May 2023 @ CuriousMedia</p>
-
-                            </div>
+                            <h3 class="separator-heading">Projects</h3>
+                            <button onclick="expand()" class="expandButton">
+                                <p id="expandButtonText">Show more</p>
+                            </button>
                         </div>
 
                         <div class="profile-post">
                             <div>
-                                <img class="post-icon" src="images/icons/pbs-icon.png">
+                                <img class="post-icon" src="images/icons/nsm-icon.png">
                             </div>
                             <div>
-                                <p>Dylan made seasonal updates to Donkey Hodie Delivery Dash</p>
-                                <p>June 2023 @ Curious Media</p>
+                                <p>Dylan created a prototype for Nine Story Media</p>
+                                <p>Dec 2023 @ Curious Media</p>
                             </div>
                         </div>
-                        <div class="profile-post">
-                            <div>
-                                <img class="post-icon" src="images/icons/time-icon.png">
-                            </div>
-                            <div>
-                                <p>Dylan assisted with a website for Time Magezine</p>
-                                <p>July 2023 @ CuriousMedia</p>
-                            </div>
-                        </div>
-
                         <div class="profile-post">
                             <div>
                                 <img class="post-icon" src="images/icons/pbs-icon.png">
                             </div>
                             <div>
-                                <p>Dylan performed bug fixes for Donkey's Froyo Stand</p>
-                                <p>August 2023 @ CuriousMedia</p>
+                                <p>Dylan started developing a physics based game for <i>undisclosed IP</i>
+                                </p>
+                                <p>Nov 2023 @ Curious Media</p>
                             </div>
                         </div>
+                        <div class="profile-post">
+                            <div>
+                                <img class="post-icon" src="images/icons/pbs-icon.png">
+                            </div>
+                            <div>
+                                <p>Dylan started developing a new game for <i>undisclosed IP</i></p>
+                                <p>Sept 2023 @ Curious Media</p>
+                            </div>
+                        </div>
+                        <div id="more">
+                            <div class="profile-post">
+                                <div>
+                                    <img class="post-icon" src="images/icons/frg-icon.png">
+                                </div>
+                                <div>
+                                    <p>Dylan deployed seasonal DLC to Donkey's Froyo Stand</p>
+                                    <p>August 2023 @ CuriousMedia</p>
+                                </div>
+                            </div>
+                            <div class="profile-post">
+                                <div>
+                                    <img class="post-icon" src="images/icons/time-icon.png">
+                                </div>
+                                <div>
+                                    <p>Dylan assisted with a website for Time Magezine</p>
+                                    <p>July 2023 @ CuriousMedia</p>
+                                </div>
+                            </div>
+                            <div class="profile-post">
+                                <div>
+                                    <img class="post-icon" src="images/icons/frg-icon.png">
+                                </div>
+                                <div>
+                                    <p>Dylan performed bug fixes for Donkey Hodie Delivery Dash</p>
+                                    <p>June 2023 @ Curious Media</p>
+                                </div>
+                            </div>
+                            <div class="profile-post">
+                                <div>
+                                    <img class="post-icon" src="images/icons/gp-icon.png">
+                                </div>
+                                <div>
+                                    <p>Dylan developed a story book for Georgia Power</p>
+                                    <p>May 2023 @ CuriousMedia</p>
 
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 

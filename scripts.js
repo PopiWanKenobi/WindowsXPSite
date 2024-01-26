@@ -3,6 +3,24 @@ dragElement(document.getElementById("about"));
 
 taskbarButton(document.getElementById("taskbar"));
 
+expand(document.getElementById("expandButton"));
+
+function expand() {
+    const morePosts = document.getElementById("more");
+    const button = document.getElementById("expandButtonText");
+    if (morePosts.style.display === "none") {
+        button.innerHTML = "Show less";
+        morePosts.style.display = "inline";
+    }
+    else {
+        button.innerHTML = "Show more";
+        morePosts.style.display = "none";
+    }
+}
+
+function createClouds() {
+    console.log("make some clouds");
+}
 
 function taskbarButton(elmnt) {
 
