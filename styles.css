@@ -85,8 +85,7 @@ p {
 
 .window {
     width: 80vw;
-    height: 80vh;
-    top: 5%;
+    height: 90vh;
     left: 10%;
 
     /*overflow: hidden;*/
@@ -286,7 +285,7 @@ li {
 
 .profile-side {
     background-color: #FFF;
-    width: 33%;
+    width: 20%;
     border-left: solid;
     border-right: solid;
     border-width: 3px;
@@ -295,6 +294,7 @@ li {
     margin-right: 5px;
     margin-top: 5px;
     padding: 5px;
+    padding-bottom: 20px;
 
     overflow: hidden;
     overflow-y: scroll;
@@ -302,7 +302,7 @@ li {
 
 .profile-main {
     background-color: #FFF;
-    width: 67%;
+    width: 80%;
     border-right: solid;
     border-width: 3px;
     border-color: lightgray;
