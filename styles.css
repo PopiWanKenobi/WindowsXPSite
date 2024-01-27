@@ -260,6 +260,8 @@ li {
     display: flex;
     height: 100%;
     background-color: #FFF;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .profile-banner {
@@ -295,9 +297,6 @@ li {
     margin-top: 5px;
     padding: 5px;
     padding-bottom: 20px;
-
-    overflow: hidden;
-    overflow-y: scroll;
 }
 
 .profile-main {
@@ -311,10 +310,6 @@ li {
     margin-top: 5px;
     padding: 5px;
     text-align: left;
-
-    overflow: hidden;
-    overflow-y: scroll;
-
 }
 
 .profile-separator {
@@ -440,6 +435,7 @@ h2.profile-bio {
 .skills {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 50px;
 }
 
 #more {
